@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.cleanboost.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_vpn"
+        android:name="com.example.cleanboost.ui.vpn.VpnFragment"
+        android:label="@string/title_vpn"
+        tools:layout="@layout/fragment_vpn" />
+    <fragment
+    android:id="@+id/navigation_battery"
+    android:name="com.example.cleanboost.ui.battery.BatteryFragment"
+    android:label="@string/title_battery"
+    tools:layout="@layout/fragment_battery" />
+    <fragment
+        android:id="@+id/navigation_storage"
+        android:name="com.example.cleanboost.ui.storage.StorageFragment"
+        android:label="@string/title_storage"
+        tools:layout="@layout/fragment_storage" />
+
+    <fragment
+        android:id="@+id/navigation_cpu"
+        android:name="com.example.cleanboost.ui.cpu.CpuFragment"
+        android:label="@string/title_cpu"
+        tools:layout="@layout/fragment_cpu" />
+</navigation>

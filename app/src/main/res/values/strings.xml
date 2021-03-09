@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CleanBoost</string>
+    <string name="title_home">Home</string>
+    <string name="title_storage">Storage</string>
+    <string name="title_cpu">Cpu</string>
+    <string name="title_battery">Battery</string>
+    <string name="title_vpn">Vpn</string>
+</resources>
