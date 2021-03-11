@@ -13,6 +13,9 @@
     <color name="background">#F0F1F6</color>
     <color name="activePrimary">#FE7F2D</color>
 
+    <color name="primaryGreen">#619B8A</color>
+    <color name="primaryYellow">#FCCA46</color>
+
 
 
 </resources>

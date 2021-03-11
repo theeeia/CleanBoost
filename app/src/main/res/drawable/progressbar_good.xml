@@ -31,7 +31,7 @@
                 <corners android:radius="8dip" />
                 <solid
                     android:angle="90"
-                    android:color="@color/activePrimary" />
+                    android:color="@color/primaryGreen" />
             </shape>
         </clip>
     </item>

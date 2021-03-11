@@ -23,10 +23,5 @@
         <item name="android:textColorPrimary">#3D405B</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
-    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
-        <item name="android:indeterminateOnly">false</item>
-        <item name="android:progressDrawable">@drawable/progressbar</item>
-        <item name="android:minHeight">10dip</item>
-        <item name="android:maxHeight">10dip</item>
-    </style>
+
 </resources>

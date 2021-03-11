@@ -6,8 +6,7 @@
     <string name="title_battery">Battery</string>
     <string name="title_vpn">Vpn</string>
     <string name="phone_opt">Phone optimization:</string>
-    <string name="status">POOR</string>
-    <string name="status1">POOR</string>
-    <string name="status2">OK</string>
-    <string name="status3">GOOD</string>
+    <string name="status_poor">POOR</string>
+    <string name="status_ok">OK</string>
+    <string name="status_good">GOOD</string>
 </resources>
