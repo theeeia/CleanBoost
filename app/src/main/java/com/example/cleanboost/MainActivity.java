@@ -18,11 +18,6 @@ import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
-    Random rand = new Random();
-    int n = rand.nextInt(50);
-    //if( n < 30){
-
-    //};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             {progressBarStatus.setText(getResources().getString(R.string.status_poor));
                 progressBarStatus.setTextColor(getResources().getColor(R.color.activePrimary));
                 simpleProgressBar.setProgressDrawable(getResources().getDrawable(R.drawable.progressbar));
-
             }
             else if(randomGeneratedStatus<=80)
             {progressBarStatus.setText(getResources().getString(R.string.status_ok));

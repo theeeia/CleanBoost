@@ -9,4 +9,6 @@
     <string name="status_poor">POOR</string>
     <string name="status_ok">OK</string>
     <string name="status_good">GOOD</string>
+    <string name="scan">SCAN</string>
+    <string name="home">Not scanned since yesterday</string>
 </resources>
