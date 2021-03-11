@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="BottomNavigation">
+        <item name="android:background">@color/background</item>
+        <item name="itemTextColor">@color/color_selected_bottomnav</item>
+        <item name="itemIconTint">@color/color_selected_bottomnav</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+        <item name="itemBackground">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <integer name="visibility_true">1</integer>
+    <integer name="visibility_false">0</integer>
+</resources>

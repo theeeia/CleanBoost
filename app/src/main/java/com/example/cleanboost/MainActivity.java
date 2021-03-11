@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         ProgressBar simpleProgressBar=(ProgressBar) findViewById(R.id.simpleProgressBar); // initiate the progress bar
         simpleProgressBar.setMax(100); // 100 maximum value for the progress bar
-        simpleProgressBar.setProgress(50); // 50 default progress value for the progress bar
+        simpleProgressBar.setProgress(20); // 50 default progress value for the progress bar
 
     }
 
