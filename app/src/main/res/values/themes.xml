@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CleanBoost" parent="Theme.AppCompat.Light">
+    <style name="Theme.CleanBoost" parent="Theme.AppCompat.Light.NoActionBar">
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryColor</item>
@@ -22,6 +22,8 @@
         <item name="android:colorBackground">#226619</item>
         <item name="android:textColorPrimary">#3D405B</item>
         <item name="android:windowContentOverlay">@null</item>
+
+
     </style>
 
 </resources>

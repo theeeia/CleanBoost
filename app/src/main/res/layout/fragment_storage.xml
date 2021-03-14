@@ -6,6 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".ui.storage.StorageFragment">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawableTint="@color/primaryColor"
+            android:elevation="10dp"
+            android:padding="16dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Free Up Storage"
+            android:textSize="20sp">
+
+        </TextView>
+
+        // add logo here
+    </LinearLayout>
+
     <TextView
         android:id="@+id/text_storage"
         android:layout_width="match_parent"
