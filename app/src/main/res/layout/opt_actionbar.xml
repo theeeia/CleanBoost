@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!--
+the action bar with progress bar
+-->
 
 <androidx.appcompat.widget.Toolbar
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"

@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //action bar
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+       getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.opt_actionbar);
         getSupportActionBar().setElevation(0);
 
