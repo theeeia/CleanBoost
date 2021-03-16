@@ -18,6 +18,10 @@
     <color name="lightShadow">#FFFFFF</color>
     <color name="darkShadow">#B4BBDD</color>
 
+    //Gradient for neumorphism
+    <color name="neu_Center">#11FaFaFa</color>
+    <color name="neu_Dark">#44A2A2A2</color>
+
 
 
 </resources>

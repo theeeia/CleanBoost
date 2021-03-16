@@ -84,13 +84,14 @@
                 app:neumorph_shadowColorLight="#11ffffff"
                 app:neumorph_shadowElevation="10dp"
                 app:neumorph_shapeAppearance="@style/ShapeAppearance"
-                app:neumorph_shapeType="flat">
+                app:neumorph_shapeType="basin">
 
                 <ImageView
                     android:tileMode="disabled"
                     android:id="@+id/activity_cpu"
-                    android:layout_width="250dp"
-                    android:layout_height="250dp"
+                    android:antialias="true"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
                     android:src="@drawable/bt_search" />
             </soup.neumorphism.NeumorphCardView>
 

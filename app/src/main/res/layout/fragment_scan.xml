@@ -1,177 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.ScanFragment">
 
+
     <LinearLayout
+        android:id="@+id/btnsLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/btnsLayout"
         android:gravity="center"
-        android:orientation="vertical"
-        >
-        <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/round_area"
-        android:elevation="12dp"
-            android:layout_margin="15dp"
-        >
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_storage"
-            android:background="@null"
-            android:layout_marginStart="20dp"
-            android:gravity="start|center"
-            app:tint="@color/primaryColor"
-            android:layout_weight="1"/>
-        <TextView
+        android:orientation="vertical">
+
+        <soup.neumorphism.NeumorphCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@null"
-            android:layout_gravity="center"
-            android:text="@string/cpu_btn"
-            android:textSize="18sp"
-            android:layout_weight="1"/>
-        <Button
-            android:layout_gravity="center"
-            android:id="@+id/cpu_btn"
+            android:background="@color/white"
+            app:neumorph_shapeType="flat"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_neumorphism">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:src="@drawable/ic_storage"
+                    app:tint="@color/primaryColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/cpu_btn"
+                    android:textSize="15sp" />
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/cpu_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/shape_neu_primary"
+                        android:text="@string/boost"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:background="@drawable/rounded_btn"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
-            android:text="@string/boost"
-            android:layout_marginEnd="20dp"
-            android:textSize="15sp"
-            android:layout_weight="1"
-           />
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/round_area"
-            android:elevation="12dp"
-            android:layout_margin="15dp"
+            android:background="@color/white"
+            app:neumorph_shapeType="flat"
+
             >
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_storage"
-                android:background="@null"
-                android:layout_marginStart="20dp"
-                android:gravity="start|center"
-                app:tint="@color/primaryColor"
-                android:layout_weight="1"/>
-            <TextView
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_gravity="center"
-                android:text="@string/storage_btn"
-                android:textSize="18sp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_gravity="center"
-                android:id="@+id/storage_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/rounded_btn"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:text="@string/boost"
-                android:layout_marginEnd="20dp"
-                android:textSize="15sp"
-                android:layout_weight="1"
-                />
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="350dp"
+                android:background="@drawable/shape_neumorphism">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:src="@drawable/ic_storage"
+                    app:tint="@color/primaryColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/storage_btn"
+                    android:textSize="15sp" />
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/storage_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/shape_neu_primary"
+                        android:text="@string/boost"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/round_area"
-            android:elevation="12dp"
-            android:layout_margin="15dp"
+            android:background="@color/white"
+            app:neumorph_shapeType="flat"
+
             >
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_storage"
-                android:background="@null"
-                android:layout_marginStart="20dp"
-                android:gravity="start|center"
-                app:tint="@color/primaryColor"
-                android:layout_weight="1"/>
-            <TextView
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_gravity="center"
-                android:text="@string/battery_btn"
-                android:textSize="18sp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_gravity="center"
-                android:id="@+id/battery_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/rounded_btn"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:text="@string/boost"
-                android:layout_marginEnd="20dp"
-                android:textSize="15sp"
-                android:layout_weight="1"
-            />
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="350dp"
+                android:background="@drawable/shape_neumorphism">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:src="@drawable/ic_storage"
+                    app:tint="@color/primaryColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/battery_btn"
+                    android:textSize="15sp" />
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/battery_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/shape_neu_primary"
+                        android:text="@string/boost"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/round_area"
-            android:elevation="12dp"
-            android:layout_margin="15dp"
+            android:background="@color/white"
+            app:neumorph_shapeType="flat"
+
             >
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/ic_storage"
-                android:background="@null"
-                android:layout_marginStart="20dp"
-                android:gravity="start|center"
-                app:tint="@color/primaryColor"
-                android:layout_weight="1"/>
-            <TextView
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_gravity="center"
-                android:text="@string/vpn_btn"
-                android:textSize="18sp"
-                android:layout_weight="1"/>
-            <Button
-                android:layout_gravity="center"
-                android:id="@+id/vpn_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/rounded_btn"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:text="@string/boost"
-                android:layout_marginEnd="20dp"
-                android:textSize="15sp"
-                android:layout_weight="1"
-                />
-        </LinearLayout>
+                android:background="@drawable/shape_neumorphism">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="start|center"
+                    android:src="@drawable/ic_storage"
+                    app:tint="@color/primaryColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/vpn_btn"
+                    android:textSize="15sp" />
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/vpn_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/shape_neu_primary"
+                        android:text="@string/boost"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
 
     </LinearLayout>
-
 
 
 </FrameLayout>
