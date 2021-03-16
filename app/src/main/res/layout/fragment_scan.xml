@@ -11,67 +11,167 @@
         android:layout_height="match_parent"
         android:id="@+id/btnsLayout"
         android:gravity="center"
-        android:orientation="vertical" >
-
-
-        <Button
-            android:id="@+id/cpu"
-            android:layout_width="350dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round_area"
+        android:elevation="12dp"
+            android:layout_margin="15dp"
+        >
+        <ImageView
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="Cpu"
-            android:layout_marginBottom="15dp"
-            android:textSize="20sp"
-            app:iconSize="85dp"
-            app:iconGravity="textStart"
-            app:iconPadding="20dp"
-            android:paddingEnd="50dp"
-            android:paddingStart="10dp"
+            android:src="@drawable/ic_storage"
+            android:background="@null"
+            android:layout_marginStart="20dp"
+            android:gravity="start|center"
+            app:tint="@color/primaryColor"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:text="@string/cpu_btn"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/cpu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_btn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/boost"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+           />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_area"
+            android:elevation="12dp"
+            android:layout_margin="15dp"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_storage"
+                android:background="@null"
+                android:layout_marginStart="20dp"
+                android:gravity="start|center"
+                app:tint="@color/primaryColor"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:text="@string/storage_btn"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/storage_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_btn"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/boost"
+                android:layout_marginEnd="20dp"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_area"
+            android:elevation="12dp"
+            android:layout_margin="15dp"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_storage"
+                android:background="@null"
+                android:layout_marginStart="20dp"
+                android:gravity="start|center"
+                app:tint="@color/primaryColor"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:text="@string/battery_btn"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/battery_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_btn"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/boost"
+                android:layout_marginEnd="20dp"
+                android:textSize="15sp"
+                android:layout_weight="1"
             />
-
-        <Button
-            android:id="@+id/storage"
+    </LinearLayout>
+        <LinearLayout
             android:layout_width="350dp"
-            android:layout_height="50dp"
-
-            android:layout_marginBottom="15dp"
-            android:paddingStart="-20dp"
-            android:paddingEnd="50dp"
-            android:text="stprage"
-            android:textSize="20sp"
-
-            app:iconGravity="textStart"
-            app:iconPadding="30dp"
-            app:iconSize="85dp" />
-
-        <Button
-            android:id="@+id/battery"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:text="battery"
-            android:textSize="20sp"
-
-            app:iconSize="85dp"
-            app:iconGravity="textStart"
-            app:iconPadding="20dp"
-            android:paddingEnd="50dp"
-            android:paddingStart="0dp"
-            />
-
-        <Button
-            android:id="@+id/vpn"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:text="vpn"
-            android:textSize="20sp"
-
-            app:iconSize="85dp"
-            app:iconGravity="textStart"
-            app:iconPadding="20dp"
-            android:paddingEnd="50dp"
-            android:paddingStart="0dp"
-            />
-
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_area"
+            android:elevation="12dp"
+            android:layout_margin="15dp"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_storage"
+                android:background="@null"
+                android:layout_marginStart="20dp"
+                android:gravity="start|center"
+                app:tint="@color/primaryColor"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:text="@string/vpn_btn"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/vpn_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_btn"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/boost"
+                android:layout_marginEnd="20dp"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
 
     </LinearLayout>
+
+
 
 </FrameLayout>

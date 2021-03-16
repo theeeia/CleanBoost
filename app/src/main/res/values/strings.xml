@@ -11,6 +11,12 @@
     <string name="status_good">GOOD</string>
     <string name="scan">SCAN</string>
     <string name="home">Not scanned since yesterday</string>
+    <string name="cpu_btn">CPU Speed</string>
+    <string name="storage_btn">Free Storage</string>
+    <string name="battery_btn">Boost Battery</string>
+    <string name="vpn_btn">Safe Browse</string>
+    <string name="boost">Boost</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

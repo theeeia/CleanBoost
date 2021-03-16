@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.CleanBoost" parent="Theme.AppCompat.Light.NoActionBar">
-
+        <item name="android:fontFamily">@font/poppins_medium</item>
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

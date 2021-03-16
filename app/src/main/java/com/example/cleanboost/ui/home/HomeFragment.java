@@ -36,12 +36,11 @@ public class HomeFragment extends Fragment {
 
         scan.setOnClickListener(new ToggleButton.OnClickListener() {
             public void onClick(View view) {
-                    replaceFragment(formatFragment("scan", new ScanFragment()));
+                    replaceFragment(new ScanFragment());
             }
         });
         return root;
     }
-
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -70,16 +69,15 @@ public class HomeFragment extends Fragment {
             progressBarStatus.setTextColor(getResources().getColor(R.color.primaryGreen));
             simpleProgressBar.setProgressDrawable(getResources().getDrawable(R.drawable.progressbar_good));}
     }
-
     public void replaceFragment(Fragment fragment) {
         getFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
     }
 
-    public Fragment formatFragment(String string, Fragment fragment) {
+    /*public Fragment formatFragment(String string, Fragment fragment) {
         kombinacija += string;
         Bundle args = new Bundle();
         args.putString("string", kombinacija);
         fragment.setArguments(args);
         return fragment;
-    }
+    }*/
 }
