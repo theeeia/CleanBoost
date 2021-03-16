@@ -22,12 +22,11 @@
 
             <LinearLayout
                 android:id="@+id/title"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:orientation="horizontal"
-
                 >
 
                 <TextView
@@ -36,14 +35,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/phone_opt"
-                    android:textSize="22dp"
+                    android:paddingLeft="30dp"
+                    android:textSize="18dp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/toolbar_status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="end"
                     android:layout_marginLeft="13dp"
                     android:text="@string/status_poor"
                     android:textSize="28dp"
@@ -74,12 +74,25 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <Button
+            <soup.neumorphism.NeumorphCardView
                 android:id="@+id/scan_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_scan_btn"
-                />
+                android:layout_centerInParent="true"
+                android:padding="4dp"
+                app:neumorph_shadowColorDark="#11000000"
+                app:neumorph_shadowColorLight="#11ffffff"
+                app:neumorph_shadowElevation="10dp"
+                app:neumorph_shapeAppearance="@style/ShapeAppearance"
+                app:neumorph_shapeType="flat">
+
+                <ImageView
+                    android:tileMode="disabled"
+                    android:id="@+id/activity_cpu"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/bt_search" />
+            </soup.neumorphism.NeumorphCardView>
 
 
             <TextView
@@ -89,7 +102,7 @@
                 android:textAlignment="center"
                 android:textSize="30dp"
                 android:text="@string/scan"
-                android:layout_margin="20dp"
+                android:layout_margin="10dp"
                 android:textStyle="bold"
                 />
             <TextView
@@ -97,7 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:text="@string/home"
                 android:gravity="center_horizontal" />
         </LinearLayout>

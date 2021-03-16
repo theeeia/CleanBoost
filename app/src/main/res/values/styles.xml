@@ -29,4 +29,9 @@
         <item name="neumorph_cornerSizeBottomLeft">500dp</item>
         <item name="neumorph_cornerSizeBottomRight">500dp</item>
     </style>
+
+    <style name="ShapeAppearance">
+        <item name="neumorph_cornerFamily">oval</item>
+        <item name="neumorph_cornerSize">32dp</item>
+    </style>
 </resources>
