@@ -43,17 +43,13 @@ public class ScanFragment extends Fragment {
         final Button battery_btn = view.findViewById(R.id.battery_btn);
         final Button vpn_btn = view.findViewById(R.id.vpn_btn);
 
-        cpu_btn.setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View view) {
-                replaceFragment(new CpuFragment());
-            }
-        });
+        cpu_btn.setOnClickListener(v ->
+                Navigation.findNavController(view).navigate(R.id.navigation_cpu)
+        );
 
-        storage_btn.setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View view) {
-                replaceFragment(new StorageFragment());
-            }
-        });
+        storage_btn.setOnClickListener(v ->
+                Navigation.findNavController(view).navigate(R.id.navigation_storage)
+        );
         ///Above can also be replaced with lambda
         battery_btn.setOnClickListener(v ->
                 Navigation.findNavController(view).navigate(R.id.navigation_battery)

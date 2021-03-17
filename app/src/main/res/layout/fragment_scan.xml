@@ -12,215 +12,262 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
 
-        <soup.neumorphism.NeumorphCardView
+
+        >
+        <Space
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:neumorph_shapeType="flat"
-
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
             >
 
-            <LinearLayout
+            <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_neumorphism">
+                android:background="@color/white"
+                app:neumorph_shapeType="flat"
+                >
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:gravity="start|center"
-                    android:src="@drawable/ic_storage"
-                    app:tint="@color/primaryColor" />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="40dp"
-                    android:text="@string/cpu_btn"
-                    android:textSize="15sp" />
+                    android:background="@drawable/shape_neumorphism"
+                    android:padding="-1dp"
+                    >
 
-                <soup.neumorphism.NeumorphCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:id="@+id/cpu_btn"
+                    <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:background="@drawable/shape_neu_primary"
-                        android:text="@string/boost"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/ic_scan_cpu"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="@string/cpu_btn"
                         android:textSize="15sp" />
-                </soup.neumorphism.NeumorphCardView>
-            </LinearLayout>
 
-        </soup.neumorphism.NeumorphCardView>
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-        <soup.neumorphism.NeumorphCardView
+                        <Button
+                            android:id="@+id/cpu_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_neu_primary"
+                            android:text="@string/boost"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:neumorph_shapeType="flat"
-
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
             >
 
-            <LinearLayout
+
+            <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_neumorphism">
+                android:background="@color/white"
+                app:neumorph_shapeType="flat"
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:gravity="start|center"
-                    android:src="@drawable/ic_storage"
-                    app:tint="@color/primaryColor" />
+                >
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="40dp"
-                    android:text="@string/storage_btn"
-                    android:textSize="15sp" />
+                    android:background="@drawable/shape_neumorphism">
 
-                <soup.neumorphism.NeumorphCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:id="@+id/storage_btn"
+                    <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:background="@drawable/shape_neu_primary"
-                        android:text="@string/boost"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:src="@drawable/ic_scan_storage"
+                        android:layout_gravity="center"
+                     />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:text="@string/storage_btn"
                         android:textSize="15sp" />
-                </soup.neumorphism.NeumorphCardView>
-            </LinearLayout>
 
-        </soup.neumorphism.NeumorphCardView>
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-        <soup.neumorphism.NeumorphCardView
+                        <Button
+                            android:id="@+id/storage_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_neu_primary"
+                            android:text="@string/boost"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:neumorph_shapeType="flat"
-
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
             >
 
-            <LinearLayout
+            <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_neumorphism">
+                android:background="@color/white"
+                app:neumorph_shapeType="flat"
+                >
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:gravity="start|center"
-                    android:src="@drawable/ic_storage"
-                    app:tint="@color/primaryColor" />
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="40dp"
-                    android:text="@string/battery_btn"
-                    android:textSize="15sp" />
+                    android:background="@drawable/shape_neumorphism">
 
-                <soup.neumorphism.NeumorphCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:id="@+id/battery_btn"
+                    <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:background="@drawable/shape_neu_primary"
-                        android:text="@string/boost"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:src="@drawable/ic_scan_battery"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="@string/battery_btn"
                         android:textSize="15sp" />
-                </soup.neumorphism.NeumorphCardView>
-            </LinearLayout>
 
-        </soup.neumorphism.NeumorphCardView>
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-        <soup.neumorphism.NeumorphCardView
+                        <Button
+                            android:id="@+id/battery_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_neu_primary"
+                            android:text="@string/boost"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:neumorph_shapeType="flat"
-
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
             >
 
-            <LinearLayout
+            <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_neumorphism">
+                android:background="@color/white"
+                app:neumorph_shapeType="flat"
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:gravity="start|center"
-                    android:src="@drawable/ic_storage"
-                    app:tint="@color/primaryColor" />
+                >
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@null"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="40dp"
-                    android:text="@string/vpn_btn"
-                    android:textSize="15sp" />
+                    android:background="@drawable/shape_neumorphism">
 
-                <soup.neumorphism.NeumorphCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:id="@+id/vpn_btn"
+                    <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:background="@drawable/shape_neu_primary"
-                        android:text="@string/boost"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="15sp" />
-                </soup.neumorphism.NeumorphCardView>
-            </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/ic_scan_vpn"
+                        android:layout_gravity="center"
+                        />
 
-        </soup.neumorphism.NeumorphCardView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+
+                        android:text="@string/vpn_btn"
+                        android:textSize="15sp" />
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/vpn_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape_neu_primary"
+                            android:text="@string/boost"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
 
     </LinearLayout>
 
