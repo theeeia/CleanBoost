@@ -20,16 +20,16 @@ public class StorageFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        storageViewModel =
+      storageViewModel =
                 new ViewModelProvider(this).get(StorageViewModel.class);
         View root = inflater.inflate(R.layout.fragment_storage, container, false);
-        final TextView textView = root.findViewById(R.id.text_storage);
+       /*   final TextView textView = root.findViewById(R.id.text_storage);
         storageViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 }

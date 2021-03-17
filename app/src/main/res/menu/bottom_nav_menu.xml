@@ -13,9 +13,9 @@
         android:icon="@drawable/ic_cpu"
         android:title="@string/title_cpu" />
     <item
-    android:id="@+id/navigation_home"
-    android:icon="@drawable/ic_home_black_24dp"
-    android:title="@string/title_home" />
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home" />
     <item
         android:id="@+id/navigation_vpn"
         android:icon="@drawable/ic_vpn"
