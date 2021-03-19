@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.battery.BatteryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryYellow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:text="Battery Saver"
+                android:textColor="@color/primaryColor"
+                android:textSize="18sp"
+
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/activity_cpu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="50dp"
+
+            android:antialias="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_activity_battery"
+            android:tileMode="disabled" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="25dp"
+            android:background="@android:color/transparent"
+            android:text="Analyzing battery"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeMaxTextSize="40sp"
+            app:autoSizeStepGranularity="2sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:padding="25dp"
+            android:background="@android:color/transparent"
+            android:text="Please wait while the app is scanning.."
+            android:textAlignment="center"
+            android:textStyle="normal"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeMaxTextSize="25sp"
+            app:autoSizeStepGranularity="2sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
