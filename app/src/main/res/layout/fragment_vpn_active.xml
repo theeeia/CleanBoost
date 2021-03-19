@@ -30,6 +30,7 @@
                 android:background="@drawable/circle_button"
                 android:elevation="10dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:paddingLeft="10dp"
                 android:src="@drawable/ic_back_arrow"
                 android:tint="@color/primaryColor" />
@@ -39,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
                 android:text="VPN Secure Surf"
+                android:layout_gravity="center"
                 android:textSize="22sp">
 
             </TextView>
