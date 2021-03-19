@@ -45,8 +45,8 @@ public class HomeFragment extends Fragment {
         scan.setOnClickListener(v->replaceFragment(new ScanFragment()));
 
         ///Load ProgressBar that is inside the fragment_home view
-        ProgressBar simpleProgressBar= getView().findViewById(R.id.simpleProgressBar); // initiate the progress bar
-        TextView progressBarStatus = getView().findViewById(R.id.toolbar_status);
+        ProgressBar simpleProgressBar= view.findViewById(R.id.simpleProgressBar); // initiate the progress bar
+        TextView progressBarStatus = view.findViewById(R.id.toolbar_status);
         simpleProgressBar.setMax(100); // 100 maximum value for the progress bar
 
         //Generate random number for now

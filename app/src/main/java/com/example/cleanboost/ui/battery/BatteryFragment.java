@@ -21,17 +21,8 @@ public class BatteryFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        batteryViewModel =
-                new ViewModelProvider(this).get( BatteryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_battery, container, false);
-        final TextView textView = root.findViewById(R.id.text_battery);
-        batteryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
 
-        });
-        return root;
+        return inflater.inflate(R.layout.fragment_battery, container, false);
+
     }
 }
