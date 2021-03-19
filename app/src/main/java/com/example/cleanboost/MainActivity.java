@@ -1,8 +1,10 @@
 package com.example.cleanboost;
 
+import android.content.Intent;
 import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -19,21 +21,22 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_storage, R.id.navigation_cpu, R.id.navigation_home, R.id.navigation_vpn,R.id.navigation_battery)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-       // NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
+
+        setContentView(R.layout.terms_cond);
 
 
+
+        LinearLayout buttomNav =  findViewById(R.id.mainNavButton);
+        buttomNav.setOnClickListener(view -> {
+            Intent intent = new Intent(this, DashboardActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        });
     }
 
 

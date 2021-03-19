@@ -40,10 +40,11 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="center"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+
             android:antialias="true"
-            android:layout_weight="4"
+            android:layout_weight="3"
             android:adjustViewBounds="true"
             android:src="@drawable/speed_img"
             android:tileMode="disabled"
@@ -69,6 +70,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/mainNavButton"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
