@@ -141,7 +141,7 @@
                         android:tileMode="disabled" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:background="@android:color/transparent"
@@ -152,14 +152,17 @@
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
                             android:text="CPU"
+                            android:layout_gravity="center"
                             android:textAlignment="center"
                             android:textColor="@color/activePrimary"
                             android:textSize="20dp"
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/cpu_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:background="@android:color/transparent"
                             android:text="88%"
                             android:textAlignment="center"
@@ -203,7 +206,7 @@
                         android:tileMode="disabled" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:background="@android:color/transparent"
@@ -213,6 +216,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
+                            android:layout_gravity="center"
                             android:text="RAM"
                             android:textAlignment="center"
                             android:textColor="@color/activePrimary"
@@ -220,8 +224,10 @@
                             android:textStyle="normal" />
 
                         <TextView
+                            android:id="@+id/ram_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:background="@android:color/transparent"
                             android:text="88%"
                             android:textAlignment="center"
