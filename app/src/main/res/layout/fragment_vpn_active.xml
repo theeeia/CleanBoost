@@ -15,11 +15,10 @@
             android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
             android:gravity="start"
             android:orientation="horizontal"
-            android:paddingTop="20dp"
-
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -30,8 +29,8 @@
                 android:background="@drawable/circle_button"
                 android:elevation="10dp"
                 android:gravity="center"
-                android:layout_gravity="center"
                 android:paddingLeft="10dp"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_back_arrow"
                 android:tint="@color/primaryColor" />
 
@@ -39,17 +38,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
-                android:text="VPN Secure Surf"
+                android:text="Vpn Secure Surf"
                 android:layout_gravity="center"
-                android:textSize="22sp">
+                android:textSize="18sp"
+                >
 
             </TextView>
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="60dp"
+                android:layout_width="wrap_content"
                 android:layout_height="60dp"
-                android:layout_weight="1"
+                android:layout_gravity="center"
                 android:antialias="true"
                 android:src="@drawable/logo_ob"
                 android:tileMode="disabled" />
