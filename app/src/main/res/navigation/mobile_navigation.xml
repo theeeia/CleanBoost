@@ -24,7 +24,7 @@
         android:id="@+id/navigation_storage"
         android:name="com.example.cleanboost.ui.storage.StorageFragment"
         android:label="@string/title_storage"
-        tools:layout="@layout/fragment_storage" />
+        tools:layout="@layout/fragment_storage_big" />
 
     <fragment
         android:id="@+id/navigation_cpu"
